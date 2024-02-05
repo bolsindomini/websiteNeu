@@ -36,6 +36,8 @@ li a, #navbarToggle{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: all 0.5s ease;
+
 }
 #navbarToggle{
     background-color: #eda02c;
@@ -50,6 +52,26 @@ li a:hover {
 }
 #navbarToggle {
     display: none;
+}
+
+/*Content styling*/
+.content {
+    padding: 3%;
+}
+
+/*Movies styling*/
+.movies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+.movie{
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: #00000057 10px 10px 20px 20px;
+    gap: 2%;
+    margin-bottom: 5%;
 }
 
 /*Header styling*/
