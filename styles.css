@@ -1,45 +1,47 @@
 body {
- font-family: Verdana, Geneva, Tahoma, sans-serif;
- margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
 }
 
 /*Menu style*/
 
 nav {
     background-color: #ff7207;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
+    /* Safari */
     position: sticky;
-    top: 0; 
-    
+    top: 0;
+
     display: flex;
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
 }
+
 menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-   
-  }
-  
-  li {
+
+}
+
+li {
     display: inline-block;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  li a:hover {
+}
+
+li a:hover {
     background-color: #111;
-  }
-  
-  .active {
+}
+
+.active {
     background-color: #0076a8;
-  }
+}
