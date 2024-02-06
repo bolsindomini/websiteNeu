@@ -108,6 +108,12 @@ li a:hover {
     text-align: center;
 }
 
+.aboutusheader {
+    text-align: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
 /*Maps carte*/
 .maps-container{
     height: 40vh;
