@@ -104,6 +104,10 @@ li a:hover {
     font-size: 30px;
   }
 
+.trailerheader {
+    text-align: center;
+}
+
 /*Maps carte*/
 .maps-container{
     height: 40vh;
