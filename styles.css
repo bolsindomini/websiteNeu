@@ -27,11 +27,11 @@ nav {
 
 }
 
-li {
+.navbar-menu li {
     display: inline-block;
 }
 
-li a, #navbarToggle{
+.navbar-menu li a, #navbarToggle{
     display: block;
     color: white;
     text-align: center;
@@ -44,7 +44,7 @@ li a, #navbarToggle{
     background-color: #eda02c;
 }
 
-li a:hover {
+.navbar-menu li a:hover {
     background-color: #111;
 }
 
@@ -91,6 +91,36 @@ li a:hover {
     height: 100%;
     border: none;
 }
+/*Programming styling*/
+.programm-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.programm-day-box{
+    border-radius: 20px;
+    box-shadow: #00000057 5px 5px 20px 5px;
+    padding: 1%;
+    width: 30%;
+    margin-top: 2%;
+}
+.programm-day-box h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.programm-day-box p{
+    font-size: 13px;
+    text-align: center;
+}
+.programm-day-box a{
+    text-decoration: none;
+    color: #0076a8;
+}
+.programm-day-box a:hover{
+    color: #648999;
+
+}
 
 /*Header styling*/
 .header {
@@ -128,18 +158,24 @@ li a:hover {
     .navbar-menu.open {
         display: flex;
         flex-direction: column;
-        
+        justify-content: center;
     }
     #navbarToggle {
         display: block;
+        align-self: flex-end;
     }
     nav{
-        justify-content: center;
-        flex-direction: column;
         align-items: center;
+        
     }
     .movie{
         width: 90%;
+    }
+    .movie p{
+        font-size: 13px;
+    }
+    .programm-day-box{
+        width: 100%;
     }
    
 }
