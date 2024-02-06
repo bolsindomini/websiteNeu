@@ -1,6 +1,12 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+    background-image: url("img/background.jpg");
+    background-position: center;
+    background-size: fill;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 /*Menu style*/
@@ -74,6 +80,8 @@ nav {
     gap: 2%;
     margin-bottom: 5%;
     width: 70%;
+    background-color: rgba(255, 255, 255, 0.648);
+
 }
 .trailer-container{
     position: relative;
@@ -96,6 +104,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 5%;
 
 }
 .programm-day-box{
@@ -104,6 +113,7 @@ nav {
     padding: 1%;
     width: 30%;
     margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.648);
 }
 .programm-day-box h3{
     text-align: center;
@@ -138,10 +148,16 @@ nav {
     text-align: center;
 }
 
-.aboutusheader {
+/*About us styling*/
+.aboutus-content {
+    width: 60vw;
+    margin: auto;
+}
+.aboutus-content h1, .aboutus-content h2,.aboutus-content h3{
     text-align: center;
-    padding-left: 20vw;
-    padding-right: 20vw;
+}
+.aboutus-section{
+    margin-bottom: 5vh;
 }
 
 /*Maps carte*/
@@ -176,6 +192,10 @@ nav {
     }
     .programm-day-box{
         width: 100%;
+    }
+    .aboutus-content{
+        width: unset;
+        padding: 3%;
     }
    
 }
