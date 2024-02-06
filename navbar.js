@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Navbar content
-    const navbarHTML = `
+  // Navbar content
+  const navbarHTML = `
       <nav>
         <div class="logo-container">
           <a href="/"><img width="50px" src="img/Logo.png" alt="Logo"></a>
@@ -15,30 +15,30 @@ document.addEventListener("DOMContentLoaded", function () {
       </nav>
     `;
 
-    // Insert the navbar into the body
-    document.body.insertAdjacentHTML('afterbegin', navbarHTML);
+  // Insert the navbar into the body
+  document.body.insertAdjacentHTML('afterbegin', navbarHTML);
 
-    // Toggle menu display on click
-    document.getElementById('navbarToggle').addEventListener('click', function () {
-        const menu = document.querySelector('.navbar-menu');
-        menu.classList.toggle('open');
-    });
+  // Toggle menu display on click
+  document.getElementById('navbarToggle').addEventListener('click', function () {
+    const menu = document.querySelector('.navbar-menu');
+    menu.classList.toggle('open');
+  });
 
-    // Get current page path
-    const currentPageUrl = window.location.pathname.split('/').pop() || 'index.html';
+  // Get current page path
+  const currentPageUrl = window.location.pathname.split('/').pop() || 'index.html';
 
-    // Select all navigation links
-    const navLinks = document.querySelectorAll('nav menu li a');
+  // Select all navigation links
+  const navLinks = document.querySelectorAll('nav menu li a');
 
-    // Loop through all links to find the one that matches the current URL
-    navLinks.forEach(link => {
-        // Check if the link's href matches the current page URL
-        // Considering the possibility of 'index.html' for the root
-        const linkHref = link.getAttribute('href') === '/' ? 'index.html' : link.getAttribute('href');
+  // Loop through all links to find the one that matches the current URL
+  navLinks.forEach(link => {
+    // Check if the link's href matches the current page URL
+    // Considering the possibility of 'index.html' for the root
+    const linkHref = link.getAttribute('href') === '/' ? 'index.html' : link.getAttribute('href');
 
-        if (linkHref === currentPageUrl) {
-            // Add the 'active' class to the matching link
-            link.classList.add('active');
-        }
-    });
+    if (linkHref === currentPageUrl) {
+      // Add the 'active' class to the matching link
+      link.classList.add('active');
+    }
+  });
 });

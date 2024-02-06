@@ -37,7 +37,8 @@ nav {
     display: inline-block;
 }
 
-.navbar-menu li a, #navbarToggle{
+.navbar-menu li a,
+#navbarToggle {
     display: block;
     color: white;
     text-align: center;
@@ -46,7 +47,8 @@ nav {
     transition: all 0.5s ease;
 
 }
-#navbarToggle{
+
+#navbarToggle {
     background-color: #eda02c;
 }
 
@@ -57,6 +59,7 @@ nav {
 .active {
     background-color: #0076a8;
 }
+
 #navbarToggle {
     display: none;
 }
@@ -65,7 +68,8 @@ nav {
 .content {
     padding: 3%;
 }
-.home-introduction{
+
+.home-introduction {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,17 +79,19 @@ nav {
 }
 
 /* Gallery */
-.gallery{
+.gallery {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 100%;
 }
+
 .gallery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.text-image{
+
+.text-image {
     width: 30vw;
     height: auto;
     margin-top: 2%;
@@ -93,13 +99,14 @@ nav {
 }
 
 /*Movies styling*/
-.movies{
+.movies {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2%;
 }
-.movie{
+
+.movie {
     border-radius: 10px;
     padding: 2%;
     box-shadow: #00000057 10px 10px 20px 20px;
@@ -109,13 +116,16 @@ nav {
     background-color: rgba(255, 255, 255, 0.648);
 
 }
-.trailer-container{
+
+.trailer-container {
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
 }
-.trailer{
+
+.trailer {
     position: absolute;
     top: 0;
     left: 0;
@@ -125,15 +135,17 @@ nav {
     height: 100%;
     border: none;
 }
+
 /*Programming styling*/
-.programm-content{
+.programm-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 5%;
 
 }
-.programm-day-box{
+
+.programm-day-box {
     border-radius: 20px;
     box-shadow: #00000057 5px 5px 20px 5px;
     padding: 1%;
@@ -142,19 +154,23 @@ nav {
     margin-right: 1%;
     background-color: rgba(255, 255, 255, 0.648);
 }
-.programm-day-box h3{
+
+.programm-day-box h3 {
     text-align: center;
     text-transform: uppercase;
 }
-.programm-day-box p{
+
+.programm-day-box p {
     font-size: 13px;
     text-align: center;
 }
-.programm-day-box a{
+
+.programm-day-box a {
     text-decoration: none;
     color: #0076a8;
 }
-.programm-day-box a:hover{
+
+.programm-day-box a:hover {
     color: #648999;
 
 }
@@ -169,7 +185,7 @@ nav {
     background-repeat: no-repeat;
     color: white;
     font-size: 30px;
-  }
+}
 
 .trailerheader {
     text-align: center;
@@ -180,49 +196,60 @@ nav {
     width: 60vw;
     margin: auto;
 }
-.aboutus-content h1, .aboutus-content h2,.aboutus-content h3{
+
+.aboutus-content h1,
+.aboutus-content h2,
+.aboutus-content h3 {
     text-align: center;
 }
-.aboutus-section{
+
+.aboutus-section {
     margin-bottom: 5vh;
 }
 
 /*Maps carte*/
-.maps-container{
+.maps-container {
     height: 40vh;
-}  
+}
 
 
 /* Mobile styling */
-@media (max-width: 768px){
-    .navbar-menu{
+@media (max-width: 768px) {
+    .navbar-menu {
         display: none;
     }
+
     .navbar-menu.open {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     #navbarToggle {
         display: block;
         align-self: flex-end;
     }
-    nav{
+
+    nav {
         align-items: center;
-        
+
     }
-    .movie{
+
+    .movie {
         width: 90%;
     }
-    .movie p{
+
+    .movie p {
         font-size: 13px;
     }
-    .programm-day-box{
+
+    .programm-day-box {
         width: 100%;
     }
-    .aboutus-content{
+
+    .aboutus-content {
         width: unset;
         padding: 3%;
     }
-   
+
 }
