@@ -1,11 +1,8 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    background-image: url("img/background.jpg");
-    background-position: center;
-    background-size: fill;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background: rgb(146,142,209);
+    background: linear-gradient(145deg, rgba(146,142,209,1) 0%, rgba(4,19,22,1) 100%);
     min-height: 100vh;
 }
 
@@ -101,8 +98,8 @@ nav {
     width: 80vw;
     margin: auto;
     text-align: center;
-    
-
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -212,9 +209,15 @@ nav {
 
 }
 
-.mailButton {
-    color: #0076a8;
-    box-sizing: border-box;
+#mailButton {
+    text-decoration: none;
+    color: white;
+    background-color: #0076a8;
+    padding: 2%;
+    margin: 2%;
+    width: 50%;
+    align-self: center;
+    
 
 }
 
