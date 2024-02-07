@@ -19,6 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 panel.style.display = "block";
             }
-        });        
+        });
     });
 });
